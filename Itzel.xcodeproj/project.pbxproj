@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		430C99DE29CF8B1500455151 /* PisoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430C99DD29CF8B1500455151 /* PisoViewController.swift */; };
+		430C99E029CF8B2700455151 /* CrujiaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430C99DF29CF8B2700455151 /* CrujiaViewController.swift */; };
+		430C99E229CF99EE00455151 /* ViewControllerHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430C99E129CF99EE00455151 /* ViewControllerHome.swift */; };
+		430C99E629CFAA8300455151 /* ClienteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430C99E529CFAA8300455151 /* ClienteViewController.swift */; };
+		430C99E829CFAB5D00455151 /* ProveedorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430C99E729CFAB5D00455151 /* ProveedorViewController.swift */; };
+		4391364329CE1E5E001E1A83 /* Montserrat-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4391364029CE1E5D001E1A83 /* Montserrat-Medium.otf */; };
+		4391364429CE1E5E001E1A83 /* Montserrat-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4391364129CE1E5D001E1A83 /* Montserrat-Light.otf */; };
+		4391364529CE1E5E001E1A83 /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4391364229CE1E5E001E1A83 /* Montserrat-Regular.otf */; };
 		439A5EB129CD7485006FD841 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439A5EB029CD7485006FD841 /* AppDelegate.swift */; };
 		439A5EB329CD7485006FD841 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439A5EB229CD7485006FD841 /* SceneDelegate.swift */; };
 		439A5EB529CD7485006FD841 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439A5EB429CD7485006FD841 /* ViewController.swift */; };
@@ -17,6 +25,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		430C99DD29CF8B1500455151 /* PisoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PisoViewController.swift; sourceTree = "<group>"; };
+		430C99DF29CF8B2700455151 /* CrujiaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrujiaViewController.swift; sourceTree = "<group>"; };
+		430C99E129CF99EE00455151 /* ViewControllerHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerHome.swift; sourceTree = "<group>"; };
+		430C99E529CFAA8300455151 /* ClienteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClienteViewController.swift; sourceTree = "<group>"; };
+		430C99E729CFAB5D00455151 /* ProveedorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProveedorViewController.swift; sourceTree = "<group>"; };
+		4391364029CE1E5D001E1A83 /* Montserrat-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.otf"; sourceTree = "<group>"; };
+		4391364129CE1E5D001E1A83 /* Montserrat-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.otf"; sourceTree = "<group>"; };
+		4391364229CE1E5E001E1A83 /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
 		439A5EAD29CD7485006FD841 /* Itzel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Itzel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		439A5EB029CD7485006FD841 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		439A5EB229CD7485006FD841 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +55,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		430C99E329CFAA4100455151 /* Productos */ = {
+			isa = PBXGroup;
+			children = (
+				439A5EB429CD7485006FD841 /* ViewController.swift */,
+				430C99DD29CF8B1500455151 /* PisoViewController.swift */,
+				430C99DF29CF8B2700455151 /* CrujiaViewController.swift */,
+			);
+			path = Productos;
+			sourceTree = "<group>";
+		};
+		430C99E429CFAA5E00455151 /* Personas */ = {
+			isa = PBXGroup;
+			children = (
+				430C99E529CFAA8300455151 /* ClienteViewController.swift */,
+				430C99E729CFAB5D00455151 /* ProveedorViewController.swift */,
+			);
+			path = Personas;
+			sourceTree = "<group>";
+		};
+		4391363F29CE1E13001E1A83 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4391364129CE1E5D001E1A83 /* Montserrat-Light.otf */,
+				4391364029CE1E5D001E1A83 /* Montserrat-Medium.otf */,
+				4391364229CE1E5E001E1A83 /* Montserrat-Regular.otf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
 		439A5EA429CD7485006FD841 = {
 			isa = PBXGroup;
 			children = (
@@ -58,9 +103,12 @@
 		439A5EAF29CD7485006FD841 /* Itzel */ = {
 			isa = PBXGroup;
 			children = (
+				430C99E429CFAA5E00455151 /* Personas */,
+				430C99E329CFAA4100455151 /* Productos */,
+				4391363F29CE1E13001E1A83 /* fonts */,
 				439A5EB029CD7485006FD841 /* AppDelegate.swift */,
 				439A5EB229CD7485006FD841 /* SceneDelegate.swift */,
-				439A5EB429CD7485006FD841 /* ViewController.swift */,
+				430C99E129CF99EE00455151 /* ViewControllerHome.swift */,
 				439A5EB629CD7485006FD841 /* Main.storyboard */,
 				439A5EBC29CD7488006FD841 /* Assets.xcassets */,
 				439A5EBE29CD7488006FD841 /* LaunchScreen.storyboard */,
@@ -128,9 +176,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4391364429CE1E5E001E1A83 /* Montserrat-Light.otf in Resources */,
 				439A5EC029CD7488006FD841 /* LaunchScreen.storyboard in Resources */,
+				4391364329CE1E5E001E1A83 /* Montserrat-Medium.otf in Resources */,
 				439A5EBD29CD7488006FD841 /* Assets.xcassets in Resources */,
 				439A5EB829CD7485006FD841 /* Main.storyboard in Resources */,
+				4391364529CE1E5E001E1A83 /* Montserrat-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,8 +192,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				430C99E029CF8B2700455151 /* CrujiaViewController.swift in Sources */,
+				430C99E829CFAB5D00455151 /* ProveedorViewController.swift in Sources */,
+				430C99E629CFAA8300455151 /* ClienteViewController.swift in Sources */,
 				439A5EB529CD7485006FD841 /* ViewController.swift in Sources */,
+				430C99E229CF99EE00455151 /* ViewControllerHome.swift in Sources */,
 				439A5EB129CD7485006FD841 /* AppDelegate.swift in Sources */,
+				430C99DE29CF8B1500455151 /* PisoViewController.swift in Sources */,
 				439A5EBB29CD7485006FD841 /* Itzel.xcdatamodeld in Sources */,
 				439A5EB329CD7485006FD841 /* SceneDelegate.swift in Sources */,
 			);
@@ -297,8 +353,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -325,8 +382,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

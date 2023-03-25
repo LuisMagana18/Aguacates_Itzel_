@@ -1,4 +1,34 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21513" systemVersion="22D68" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Cliente" representedClassName="Cliente" syncable="YES" codeGenerationType="class">
+        <attribute name="nombre" optional="YES" attributeType="String"/>
+        <attribute name="ubicacion" optional="YES" attributeType="String"/>
+        <attribute name="viajes" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Producto" representedClassName="Producto" syncable="YES" codeGenerationType="class">
+        <attribute name="cantidad" optional="YES" attributeType="String"/>
+        <attribute name="estado" optional="YES" attributeType="String"/>
+        <attribute name="proveedor" optional="YES" attributeType="String"/>
+        <attribute name="tipo" optional="YES" attributeType="String"/>
+        <attribute name="ubicacion" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="ProductoCrujia" representedClassName="ProductoCrujia" syncable="YES" codeGenerationType="class">
+        <attribute name="cantidad" optional="YES" attributeType="String"/>
+        <attribute name="estado" optional="YES" attributeType="String"/>
+        <attribute name="proveedor" optional="YES" attributeType="String"/>
+        <attribute name="tipo" optional="YES" attributeType="String"/>
+        <attribute name="ubicacion" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="ProductoPiso" representedClassName="ProductoPiso" syncable="YES" codeGenerationType="class">
+        <attribute name="cantidad" optional="YES" attributeType="String"/>
+        <attribute name="estado" optional="YES" attributeType="String"/>
+        <attribute name="proveedor" optional="YES" attributeType="String"/>
+        <attribute name="tipo" optional="YES" attributeType="String"/>
+        <attribute name="ubicacion" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Proveedor" representedClassName="Proveedor" syncable="YES" codeGenerationType="class">
+        <attribute name="nombre" optional="YES" attributeType="String"/>
+        <attribute name="ubicacion" optional="YES" attributeType="String"/>
+        <attribute name="viajes" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
 </model>

@@ -1,24 +1,669 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="URv-yY-5cU">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Frio-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Itzel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="X7A-iN-MUv">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <color key="backgroundColor" name="verdeMock"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="celda" textLabel="fvV-rj-gqS" detailTextLabel="Znz-1S-IKp" imageView="dR5-vW-ibN" style="IBUITableViewCellStyleSubtitle" id="OIR-N3-ZRi">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="74.666664123535156"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OIR-N3-ZRi" id="7Rb-Yg-cH4">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="74.666664123535156"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fvV-rj-gqS">
+                                                    <rect key="frame" x="59" y="16" width="46.333333333333336" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <color key="textColor" name="amarilloMock"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Znz-1S-IKp">
+                                                    <rect key="frame" x="59" y="46" width="43.666666666666664" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" name="blancoMock"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="snowflake" catalog="system" id="dR5-vW-ibN">
+                                                    <rect key="frame" x="23.166666666666668" y="27.666666666666671" width="17.666666666666664" height="19"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <color key="tintColor" name="blancoMock"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" name="verdeMock"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="verdeMock"/>
+                        <constraints>
+                            <constraint firstItem="X7A-iN-MUv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5Fj-p1-FIg"/>
+                            <constraint firstItem="X7A-iN-MUv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aTs-Tx-Goo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="X7A-iN-MUv" secondAttribute="bottom" id="ahB-37-bUp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="X7A-iN-MUv" secondAttribute="trailing" id="sx5-t2-3VI"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Frio" id="Kt1-Kr-tWn">
+                        <barButtonItem key="leftBarButtonItem" title="Cancelar" id="LTg-Jb-jzv">
+                            <color key="tintColor" name="blancoMock"/>
+                            <connections>
+                                <action selector="cancelar:" destination="BYZ-38-t0r" id="IXi-08-uTN"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="dPS-62-amX">
+                            <color key="tintColor" name="blancoMock"/>
+                            <connections>
+                                <action selector="nuevoProductoFrio:" destination="BYZ-38-t0r" id="m6i-Vc-luq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tablaFrio" destination="X7A-iN-MUv" id="Qes-Fa-rFR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2563" y="404"/>
+        </scene>
+        <!--View Controller Home-->
+        <scene sceneID="dxo-zB-N4B">
+            <objects>
+                <viewController id="7fd-0f-OBp" customClass="ViewControllerHome" customModule="Itzel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pce-CY-UIY">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aguacates Itzel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7RP-0k-Sz3">
+                                <rect key="frame" x="92" y="108" width="209" height="60"/>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="50"/>
+                                <color key="textColor" name="amarilloMock"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="xaJ-fx-dx3">
+                                <rect key="frame" x="32.666666666666657" y="658" width="328" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLf-UC-FE2">
+                                        <rect key="frame" x="0.0" y="0.0" width="141.33333333333334" height="80"/>
+                                        <color key="backgroundColor" name="verdeClaroMock"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="HsK-Lc-CBs"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                        <color key="tintColor" name="blancoMock"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Piso"/>
+                                        <buttonConfiguration key="configuration" style="plain" title=" Clientes" titleAlignment="automatic">
+                                            <imageReference key="image" image="person.fill" catalog="system" symbolScale="large"/>
+                                            <fontDescription key="titleFontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="13"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="ltE-E9-ALN" kind="showDetail" id="1mZ-BZ-wHd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EpJ-fh-xp5">
+                                        <rect key="frame" x="186.33333333333337" y="0.0" width="141.66666666666663" height="80"/>
+                                        <color key="backgroundColor" name="verdeClaroMock"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="9nE-FL-Hp7"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                        <color key="tintColor" name="blancoMock"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Piso"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Proveedores" titleAlignment="automatic">
+                                            <imageReference key="image" image="box.truck.fill" catalog="system" symbolScale="large"/>
+                                            <fontDescription key="titleFontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="13"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="Zhb-za-wPl" kind="showDetail" id="2QG-kd-5oa"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="lbw-v6-s6q">
+                                <rect key="frame" x="141" y="208" width="111" height="400"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uqC-1N-NBa">
+                                        <rect key="frame" x="0.0" y="0.0" width="111" height="80"/>
+                                        <color key="backgroundColor" name="verdeClaroMock"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="Tfp-ia-D2B"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                        <color key="tintColor" name="blancoMock"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Piso"/>
+                                        <buttonConfiguration key="configuration" style="plain" title=" Piso" titleAlignment="center">
+                                            <imageReference key="image" image="house.fill" catalog="system" symbolScale="large"/>
+                                            <fontDescription key="titleFontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="13"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="5fH-xc-hfV" kind="show" id="wKP-wo-U5N"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rq6-Wd-ciO">
+                                        <rect key="frame" x="0.0" y="160" width="111" height="80"/>
+                                        <color key="backgroundColor" name="verdeClaroMock"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="njh-HP-imi"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                        <color key="tintColor" name="blancoMock"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Piso"/>
+                                        <buttonConfiguration key="configuration" style="plain" title=" Crujia" titleAlignment="automatic">
+                                            <imageReference key="image" image="house.lodge.fill" catalog="system" symbolScale="large"/>
+                                            <fontDescription key="titleFontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="13"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="y2S-yK-q3E" kind="showDetail" id="1n2-0Z-rex"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrZ-Up-slX">
+                                        <rect key="frame" x="0.0" y="320" width="111" height="80"/>
+                                        <color key="backgroundColor" name="verdeClaroMock"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="EcR-8s-ahO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                        <color key="tintColor" name="blancoMock"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Piso"/>
+                                        <buttonConfiguration key="configuration" style="plain" title=" Frio" titleAlignment="center">
+                                            <imageReference key="image" image="snowflake" catalog="system" symbolScale="large"/>
+                                            <fontDescription key="titleFontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="13"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="rfp-Jw-X1V" kind="showDetail" id="sNG-HS-NK3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OPc-YK-ncg"/>
+                        <color key="backgroundColor" name="verdeMock"/>
+                        <constraints>
+                            <constraint firstItem="OPc-YK-ncg" firstAttribute="trailing" secondItem="lbw-v6-s6q" secondAttribute="trailing" constant="141" id="5Wi-3m-blL"/>
+                            <constraint firstItem="7RP-0k-Sz3" firstAttribute="top" secondItem="OPc-YK-ncg" secondAttribute="top" constant="5" id="Cb6-MK-ZRN"/>
+                            <constraint firstItem="7RP-0k-Sz3" firstAttribute="leading" secondItem="OPc-YK-ncg" secondAttribute="leading" constant="92" id="HA1-mC-GkM"/>
+                            <constraint firstItem="lbw-v6-s6q" firstAttribute="top" secondItem="7RP-0k-Sz3" secondAttribute="bottom" constant="40" id="NMW-l6-4f4"/>
+                            <constraint firstItem="OPc-YK-ncg" firstAttribute="trailing" secondItem="xaJ-fx-dx3" secondAttribute="trailing" constant="32.5" id="UuG-5P-R8R"/>
+                            <constraint firstItem="lbw-v6-s6q" firstAttribute="leading" secondItem="OPc-YK-ncg" secondAttribute="leading" constant="141" id="dfE-dp-1Kf"/>
+                            <constraint firstItem="xaJ-fx-dx3" firstAttribute="leading" secondItem="OPc-YK-ncg" secondAttribute="leading" constant="32.5" id="dlH-U5-nYb"/>
+                            <constraint firstItem="xaJ-fx-dx3" firstAttribute="top" secondItem="lbw-v6-s6q" secondAttribute="bottom" constant="50" id="jSs-Go-ASk"/>
+                            <constraint firstItem="OPc-YK-ncg" firstAttribute="bottom" secondItem="xaJ-fx-dx3" secondAttribute="bottom" constant="80" id="mZE-wP-eMh"/>
+                            <constraint firstItem="OPc-YK-ncg" firstAttribute="trailing" secondItem="7RP-0k-Sz3" secondAttribute="trailing" constant="92" id="r6C-hS-9UF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="lPW-7R-udh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gdq-Ea-PU9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1556" y="-1009"/>
+        </scene>
+        <!--Piso-->
+        <scene sceneID="OK4-M5-6Hn">
+            <objects>
+                <viewController id="9YT-bN-Yaq" customClass="PisoViewController" customModule="Itzel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kvr-3D-7fn">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="QCh-pz-Urr">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <color key="backgroundColor" name="verdeMock"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="celdaPiso" textLabel="dm5-4u-JuK" detailTextLabel="usX-Iw-8W9" imageView="0XL-OX-uR1" style="IBUITableViewCellStyleSubtitle" id="7OX-qE-Xmy">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="74.666664123535156"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7OX-qE-Xmy" id="Nz2-yA-G34">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="74.666664123535156"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dm5-4u-JuK">
+                                                    <rect key="frame" x="59" y="16" width="46.333333333333336" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <color key="textColor" name="amarilloMock"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="usX-Iw-8W9">
+                                                    <rect key="frame" x="59" y="46" width="43.666666666666664" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" name="blancoMock"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="house.fill" catalog="system" id="0XL-OX-uR1">
+                                                    <rect key="frame" x="20" y="26.666666666666664" width="24" height="19.666666666666668"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" name="verdeMock"/>
+                                        <color key="tintColor" name="verdeLimaMock"/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Jd9-T6-nUh"/>
+                        <color key="backgroundColor" name="verdeMock"/>
+                        <constraints>
+                            <constraint firstItem="QCh-pz-Urr" firstAttribute="leading" secondItem="Jd9-T6-nUh" secondAttribute="leading" id="MGs-uq-4X1"/>
+                            <constraint firstItem="QCh-pz-Urr" firstAttribute="top" secondItem="Jd9-T6-nUh" secondAttribute="top" id="WR0-2B-ab8"/>
+                            <constraint firstItem="Jd9-T6-nUh" firstAttribute="bottom" secondItem="QCh-pz-Urr" secondAttribute="bottom" id="lou-eh-Fng"/>
+                            <constraint firstItem="Jd9-T6-nUh" firstAttribute="trailing" secondItem="QCh-pz-Urr" secondAttribute="trailing" id="qr6-89-k98"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Piso" id="2rr-gD-V0t">
+                        <barButtonItem key="leftBarButtonItem" title="Cancelar" id="4Ln-M1-G8T">
+                            <color key="tintColor" name="blancoMock"/>
+                            <connections>
+                                <action selector="cancelar:" destination="9YT-bN-Yaq" id="XRA-sw-Yay"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="iFN-Ea-NV9">
+                            <color key="tintColor" name="blancoMock"/>
+                            <connections>
+                                <action selector="nuevoProductoPiso:" destination="9YT-bN-Yaq" id="MEw-Hx-95a"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tablaPiso" destination="QCh-pz-Urr" id="lU0-7E-gxQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f9S-uc-4v5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="433" y="404"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7sf-gW-tRh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="URv-yY-5cU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GzW-L5-Duf">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7fd-0f-OBp" kind="relationship" relationship="rootViewController" id="NFy-Re-noQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mpe-Mc-IY1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-337" y="-1009"/>
+        </scene>
+        <!--Crujia-->
+        <scene sceneID="dTg-xf-dRr">
+            <objects>
+                <viewController id="ctg-wF-nQa" customClass="CrujiaViewController" customModule="Itzel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PCL-dX-k2M">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="bMC-lH-BtM">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <color key="backgroundColor" name="verdeMock"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="celdaCrujia" textLabel="YjR-0H-eBw" detailTextLabel="tNO-Gh-xRF" imageView="9RG-fV-T1B" style="IBUITableViewCellStyleSubtitle" id="RyE-Ix-TNO">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="74.666664123535156"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RyE-Ix-TNO" id="hTP-DD-lEk">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="74.666664123535156"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YjR-0H-eBw">
+                                                    <rect key="frame" x="66.333333333333329" y="16" width="46.333333333333336" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <color key="textColor" name="amarilloMock"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tNO-Gh-xRF">
+                                                    <rect key="frame" x="66.333333333333329" y="46" width="43.666666666666664" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" name="blancoMock"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="house.lodge.fill" catalog="system" id="9RG-fV-T1B">
+                                                    <rect key="frame" x="12.666666666666668" y="28.999999999999996" width="38.666666666666664" height="16.666666666666664"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <color key="tintColor" name="amarilloMock"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" name="verdeMock"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fVO-8D-fk0"/>
+                        <color key="backgroundColor" name="verdeMock"/>
+                        <constraints>
+                            <constraint firstItem="fVO-8D-fk0" firstAttribute="trailing" secondItem="bMC-lH-BtM" secondAttribute="trailing" id="93L-w1-hCm"/>
+                            <constraint firstItem="fVO-8D-fk0" firstAttribute="bottom" secondItem="bMC-lH-BtM" secondAttribute="bottom" id="gKQ-8H-gFx"/>
+                            <constraint firstItem="bMC-lH-BtM" firstAttribute="leading" secondItem="fVO-8D-fk0" secondAttribute="leading" id="sba-Sg-gLv"/>
+                            <constraint firstItem="bMC-lH-BtM" firstAttribute="top" secondItem="fVO-8D-fk0" secondAttribute="top" id="sdd-9j-6M1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Crujia" id="lAh-ui-kCl">
+                        <barButtonItem key="leftBarButtonItem" title="Cancelar" id="wd3-cp-h5r">
+                            <color key="tintColor" name="blancoMock"/>
+                            <connections>
+                                <action selector="cancelar:" destination="ctg-wF-nQa" id="WOe-3f-fZv"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="rin-OO-E02">
+                            <color key="tintColor" name="blancoMock"/>
+                            <connections>
+                                <action selector="nuevoProductoCrujia:" destination="ctg-wF-nQa" id="uHr-a8-1r6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tablaCrujia" destination="bMC-lH-BtM" id="EOY-rm-Ky4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aph-WP-JER" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1491" y="404"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DR0-me-9RB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5fH-xc-hfV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="l67-zu-PP6"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ltx-O7-Yxt">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9YT-bN-Yaq" kind="relationship" relationship="rootViewController" id="Ji2-Vl-fag"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GOd-nF-s63" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="433" y="-277"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9JT-UQ-l6H">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="y2S-yK-q3E" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="HUC-ay-1hB"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="guj-1b-kCl">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ctg-wF-nQa" kind="relationship" relationship="rootViewController" id="9qG-fg-cct"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2NE-1d-pbm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1558" y="-277"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7i8-Co-5Ex">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rfp-Jw-X1V" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="jeL-aD-byh"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Iir-yC-i5c">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="b8x-OE-xfL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sDI-LX-sdS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2564" y="-277"/>
+        </scene>
+        <!--Clientes-->
+        <scene sceneID="E5Q-kt-mYn">
+            <objects>
+                <viewController id="Fv9-iL-TDI" customClass="ClienteViewController" customModule="Itzel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bzg-NG-lek">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="184-bk-ec5">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <color key="backgroundColor" name="verdeMock"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="celdaCliente" textLabel="YSB-yz-ufX" detailTextLabel="jIj-PU-oUq" imageView="SEy-SH-sjb" style="IBUITableViewCellStyleSubtitle" id="rKX-lC-S84">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="74.666664123535156"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rKX-lC-S84" id="u33-Qc-hbR">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="74.666664123535156"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YSB-yz-ufX">
+                                                    <rect key="frame" x="59" y="16" width="46.333333333333336" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <color key="textColor" name="amarilloMock"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jIj-PU-oUq">
+                                                    <rect key="frame" x="59" y="46" width="43.666666666666664" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" name="blancoMock"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="person.fill" catalog="system" id="SEy-SH-sjb">
+                                                    <rect key="frame" x="23" y="29" width="18" height="17"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <color key="tintColor" name="grisMock"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" name="verdeMock"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7eC-2p-TTp"/>
+                        <color key="backgroundColor" name="verdeMock"/>
+                        <constraints>
+                            <constraint firstItem="7eC-2p-TTp" firstAttribute="trailing" secondItem="184-bk-ec5" secondAttribute="trailing" id="NyJ-MJ-ODV"/>
+                            <constraint firstItem="7eC-2p-TTp" firstAttribute="bottom" secondItem="184-bk-ec5" secondAttribute="bottom" id="Yny-zU-EeD"/>
+                            <constraint firstItem="184-bk-ec5" firstAttribute="top" secondItem="7eC-2p-TTp" secondAttribute="top" id="r0e-da-8fb"/>
+                            <constraint firstItem="184-bk-ec5" firstAttribute="leading" secondItem="7eC-2p-TTp" secondAttribute="leading" id="zjo-bf-fQZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Clientes" id="zby-8S-NDf">
+                        <barButtonItem key="leftBarButtonItem" title="Cancelar" id="GCj-KC-2Hy">
+                            <color key="tintColor" name="blancoMock"/>
+                            <connections>
+                                <action selector="cancelar:" destination="Fv9-iL-TDI" id="6aB-Ip-iN4"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="cn0-jE-HH5">
+                            <color key="tintColor" name="blancoMock"/>
+                            <connections>
+                                <action selector="nuevoCliente:" destination="Fv9-iL-TDI" id="Fxb-JY-82Z"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tablaClientes" destination="184-bk-ec5" id="xD4-x2-I3U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l1A-Kd-oCL" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4501.5267175572517" y="-1812.6760563380283"/>
+        </scene>
+        <!--Proveedores-->
+        <scene sceneID="fui-Sm-JcC">
+            <objects>
+                <viewController id="SZc-zL-5gN" customClass="ProveedorViewController" customModule="Itzel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KwV-dy-mcK">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="8g8-3d-661">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <color key="backgroundColor" name="verdeMock"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="celdaProveedor" textLabel="DEQ-5f-kGm" detailTextLabel="IaB-0q-TED" imageView="7Tz-JZ-x6W" style="IBUITableViewCellStyleSubtitle" id="3ZQ-ky-4uK">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="74.666664123535156"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3ZQ-ky-4uK" id="Pa0-7G-Y5u">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="74.666664123535156"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DEQ-5f-kGm">
+                                                    <rect key="frame" x="61.166666666666671" y="16" width="46.333333333333336" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <color key="textColor" name="amarilloMock"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IaB-0q-TED">
+                                                    <rect key="frame" x="61.166666666666671" y="46" width="43.666666666666664" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" name="blancoMock"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="box.truck.fill" catalog="system" id="7Tz-JZ-x6W">
+                                                    <rect key="frame" x="17.833333333333336" y="27.666666666666664" width="28.333333333333332" height="19.666666666666668"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <color key="tintColor" name="blancoMock"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" name="verdeMock"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qqJ-BJ-hFI"/>
+                        <color key="backgroundColor" name="verdeMock"/>
+                        <constraints>
+                            <constraint firstItem="qqJ-BJ-hFI" firstAttribute="bottom" secondItem="8g8-3d-661" secondAttribute="bottom" id="8wN-8x-mIB"/>
+                            <constraint firstItem="qqJ-BJ-hFI" firstAttribute="trailing" secondItem="8g8-3d-661" secondAttribute="trailing" id="XIC-3p-1Df"/>
+                            <constraint firstItem="8g8-3d-661" firstAttribute="leading" secondItem="qqJ-BJ-hFI" secondAttribute="leading" id="m1d-CQ-PBD"/>
+                            <constraint firstItem="8g8-3d-661" firstAttribute="top" secondItem="qqJ-BJ-hFI" secondAttribute="top" id="s3B-u0-qsM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Proveedores" id="qxX-p4-bmp">
+                        <barButtonItem key="leftBarButtonItem" title="Cancelar" id="JFf-za-yZq">
+                            <color key="tintColor" name="blancoMock"/>
+                            <connections>
+                                <action selector="cancelar:" destination="SZc-zL-5gN" id="45P-bt-U6e"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="I6c-ri-ZZU">
+                            <color key="tintColor" name="blancoMock"/>
+                            <connections>
+                                <action selector="nuevoProveedor:" destination="SZc-zL-5gN" id="MzT-WB-sln"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tablaProveedores" destination="8g8-3d-661" id="hWa-3p-tbE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cH0-o6-M8n" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4501.5267175572517" y="-1009.1549295774648"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="eR8-df-aIf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ltE-E9-ALN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gyq-jv-ULN">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Fv9-iL-TDI" kind="relationship" relationship="rootViewController" id="oul-1S-UlV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eFr-EJ-oWd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3574.8091603053435" y="-1812.6760563380283"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="b77-vp-8x4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Zhb-za-wPl" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HqJ-Ao-sVO">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="SZc-zL-5gN" kind="relationship" relationship="rootViewController" id="n2p-me-UA3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B8I-sh-RvE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3574.8091603053435" y="-1009.1549295774648"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="box.truck.fill" catalog="system" width="128" height="88"/>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
+        <image name="house.lodge.fill" catalog="system" width="128" height="55"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="snowflake" catalog="system" width="119" height="128"/>
+        <namedColor name="amarilloMock">
+            <color red="0.92199999094009399" green="0.6589999794960022" blue="0.0040000001899898052" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="blancoMock">
+            <color red="0.96899998188018799" green="0.97299998998641968" blue="0.96899998188018799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="grisMock">
+            <color red="0.53299999237060547" green="0.57300001382827759" blue="0.64300000667572021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="verdeClaroMock">
+            <color red="0.3059999942779541" green="0.68199998140335083" blue="0.61599999666213989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="verdeLimaMock">
+            <color red="0.76099997758865356" green="0.80400002002716064" blue="0.31400001049041748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="verdeMock">
+            <color red="0.23100000619888306" green="0.52899998426437378" blue="0.47499999403953552" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

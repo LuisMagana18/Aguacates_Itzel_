@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  Itzel
 //
-//  Created by Abigail Zoe Magaña on 24/03/23.
+//  Created by Luis Angel Magaña on 24/03/23.
 //
 
 import UIKit
