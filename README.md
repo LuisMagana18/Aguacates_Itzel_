@@ -18,8 +18,8 @@ Generalidades
 - La orientación de la aplicación está diseñada para ser utilizada unicamente de manera vertical (*portrait*).
 - El sistema operativo requerido es iOS 16.2, fue elegido así para el equipo que va a correr la aplicación.
 
-###Paquetes utilizados
----
+Paquetes utilizados
+-------------
 Al ser un proyecto local, se utilizó Core Data para el manejo de la base de datos del dispositivo
 
 ---
